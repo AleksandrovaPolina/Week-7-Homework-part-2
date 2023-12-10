@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(244, 241, 232);
+}
+
+.header {
+  min-height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+@media screen and (max-width: 480px) {
+  .header {
+    justify-content: end;
+    margin-right: 20px;
+  }
+}
+.header .nav {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+@media screen and (max-width: 480px) {
+  .header .nav {
+    display: none;
+  }
+}
+.header .nav a {
+  color: #323232;
+  text-decoration: none;
+  margin-right: 1.25rem;
+}
+@media screen and (max-width: 480px) {
+  .header .logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) {
+  .header .burger_menu {
+    display: none;
+  }
+}
+
+main h1 {
+  font-family: "Open Sans", sans-serif;
+  color: #323232;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+main h2 {
+  font-family: "Tenor Sans", sans-serif;
+  color: #57463A;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.6rem;
+}
+main h3 {
+  font-family: "Tenor Sans", sans-serif;
+  color: #57463A;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+@media screen and (max-width: 480px) {
+  main h3 {
+    width: 100vw;
+  }
+}
+main p {
+  font-family: "Open Sans", sans-serif;
+  color: #323232;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.6875;
+}
+main .container_first_page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid black;
+  min-height: 85vh;
+}
+@media screen and (max-width: 480px) {
+  main .container_first_page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: none;
+  }
+}
+main .container_first_page .left {
+  grid-column: 1/2;
+  background-image: url(./img/Рис1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: left;
+}
+main .container_first_page .right {
+  grid-column: 2/3;
+  display: grid;
+  align-content: center;
+  margin-left: 40px;
+  gap: 2.19rem;
+  grid-area: right;
+}
+main .container_first_page .right button {
+  font-family: "Open Sans", sans-serif;
+  color: #F6F6F6;
+  background-color: #A1B29F;
+  width: 245px;
+  height: 60px;
+  border: none;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+@media screen and (max-width: 480px) {
+  main .container_first_page {
+    height: 150vh;
+    display: grid;
+    grid-template-areas: "right" "left";
+  }
+  main .container_first_page .left {
+    min-height: 415px;
+    width: 100vw;
+  }
+}
+
+.container_second_page {
+  width: 1000px;
+  height: 800px;
+  margin: 0 auto;
+  padding-top: 160px;
+}
+@media screen and (max-width: 480px) {
+  .container_second_page {
+    width: 100vw;
+  }
+}
+
+.about_us {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 480px) {
+  .about_us {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.text_about_us {
+  padding-top: 100px;
+  text-align: center;
+  margin-bottom: 174px;
+  font-family: "Open Sans", sans-serif;
+  color: #323232;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.6875;
+}
+
+.production {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 250px 250px;
+  border: 1px solid black;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .production {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+.production figcaption {
+  font-family: "Open Sans", sans-serif;
+  color: #323232;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.159rem;
+}/*# sourceMappingURL=style.css.map */
